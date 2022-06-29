@@ -35,7 +35,7 @@ db.once("open", () => {
 
 const app = express();
 
-const PORT = 3050;
+const PORT = process.env.PORT;
 
 const store = MongoStore.create({
     mongoUrl: dbURL,
